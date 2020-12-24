@@ -9,4 +9,5 @@ with TelegramClient(
 ) as client:
     session_str = client.session.save()
     s_m = client.send_message("me", session_str)
+    print('Kayitli mesajlara baxaraq string sessionu kopyalaya bilersiz.')
     print('Herokuya kecerek deploya davam edin.')
